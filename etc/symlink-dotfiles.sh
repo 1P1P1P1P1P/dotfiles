@@ -1,8 +1,5 @@
 #!/bin/sh
 
-[ "${SHELL##/*/}" != "zsh" ] && echo 'You might need to change default shell to zsh: `chsh -s /bin/zsh`'
-dotfiles="$HOME/Develop/personal/dotfiles"
-
 echo ""
 if [ -d "$dotfiles" ]; then
   echo "Symlinking dotfiles from $dotfiles"
