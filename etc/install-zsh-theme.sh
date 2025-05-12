@@ -1,5 +1,7 @@
 #!/bin/sh
 
+dotfiles="$HOME/Develop/personal/dotfiles"
+
 ohmyzsh="$dotfiles/home/oh-my-zsh"
 if [ -d "$ohmyzsh" ]; then
   themes="$ohmyzsh/custom/themes"

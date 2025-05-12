@@ -1,5 +1,7 @@
 #!/bin/sh
 
+dotfiles="$HOME/Develop/personal/dotfiles"
+
 echo ""
 if [ -d "$dotfiles" ]; then
   echo "Symlinking dotfiles from $dotfiles"
