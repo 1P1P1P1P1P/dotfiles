@@ -55,54 +55,74 @@ mods = "Super | Control"
 history = 100
 
 # Colors Configuration
-[[colors.indexed_colors]]
-color = "#fe8019"
-index = 16
-
-[[colors.indexed_colors]]
-color = "#d65d0e"
-index = 17
-
-[[colors.indexed_colors]]
-color = "#3c3836"
-index = 18
-
-[[colors.indexed_colors]]
-color = "#504945"
-index = 19
-
-[[colors.indexed_colors]]
-color = "#bdae93"
-index = 20
-
-[[colors.indexed_colors]]
-color = "#ebdbb2"
-index = 21
-
-[colors.bright]
-black = "0x665c54"
-blue = "0xbdae93"
-cyan = "0xd65d0e"
-green = "0x3c3836"
-magenta = "0xebdbb2"
-red = "0xfe8019"
-white = "0xfbf1c7"
-yellow = "0x504945"
+[colors.primary]
+foreground = "#e0def4"
+background = "#191724"
+dim_foreground = "#908caa"
+bright_foreground = "#e0def4"
 
 [colors.cursor]
-cursor = "0xd5c4a1"
-text = "0x1d2021"
+text = "#e0def4"
+cursor = "#524f67"
+
+[colors.vi_mode_cursor]
+text = "#e0def4"
+cursor = "#524f67"
+
+[colors.search.matches]
+foreground = "#908caa"
+background = "#26233a"
+
+[colors.search.focused_match]
+foreground = "#191724"
+background = "#ebbcba"
+
+[colors.hints.start]
+foreground = "#908caa"
+background = "#1f1d2e"
+
+[colors.hints.end]
+foreground = "#6e6a86"
+background = "#1f1d2e"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#e0def4"
+background = "#1f1d2e"
+
+[colors.selection]
+text = "#e0def4"
+background = "#403d52"
 
 [colors.normal]
-black = "0x1d2021"
-blue = "0x83a598"
-cyan = "0x8ec07c"
-green = "0xb8bb26"
-magenta = "0xd3869b"
-red = "0xfb4934"
-white = "0xd5c4a1"
-yellow = "0xfabd2f"
+black = "#26233a"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
 
-[colors.primary]
-background = "0x1d2021"
-foreground = "0xd5c4a1"
+[colors.bright]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
+
+[colors.dim]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
