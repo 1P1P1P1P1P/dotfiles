@@ -3,7 +3,7 @@
 * {
     border: none;
     border-width: 1px;
-    border-color: @overlay;
+    border-color: @subtle;
     font-family: 'FiraCode Nerd Font', 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
     font-size: 10px;
     min-height: 0;
@@ -111,7 +111,7 @@ window#waybar.empty #window {
     border-radius: 8px 0px 0px 8px;
     color: @foam;
     background: @base;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #temperature {
@@ -119,7 +119,7 @@ window#waybar.empty #window {
     color: @gold;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #temperature.critical {
@@ -127,7 +127,7 @@ window#waybar.empty #window {
     color: @love;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #battery {
@@ -135,7 +135,7 @@ window#waybar.empty #window {
     color: @foam;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #pulseaudio {
@@ -143,7 +143,7 @@ window#waybar.empty #window {
     color: @iris;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #backlight {
@@ -151,7 +151,7 @@ window#waybar.empty #window {
     color: @text;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #network {
@@ -159,7 +159,7 @@ window#waybar.empty #window {
     color: @love;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #custom-poweroff {
@@ -167,7 +167,7 @@ window#waybar.empty #window {
     color: @rose;
     background: @base;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 1px;
 }
 
 #clock {
