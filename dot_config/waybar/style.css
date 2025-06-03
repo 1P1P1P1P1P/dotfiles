@@ -8,43 +8,43 @@
 }
 
 window#waybar {
-    background: var(--base);
-    color: var(--text);
+    background: base;
+    color: text;
 }
 
 tooltip {
-    background: var(--base);
+    background: base;
     border-radius: 4px;
     border-width: 2px;
     border-style: solid;
-    border-color: var(--overlay);
+    border-color: overlay;
 }
 
 #workspaces button {
     padding: 5px;
-    color: var(--highlightMed);
+    color: highlightMed;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: var(--text);
+    color: text;
 }
 
 #workspaces button.focused {
-    color: var(--subtle);
-    background: var(--love);
+    color: subtle;
+    background: love;
     border-radius: 8px;
 }
 
 #workspaces button.urgent {
-    color: var(--base);
-    background: var(--pine);
+    color: base;
+    background: pine;
     border-radius: 8px;
 }
 
 #workspaces button:hover {
-    background: var(--highlightLow);
-    color: var(--text);
+    background: highlightLow;
+    color: text;
     border-radius: 8px;
 }
 
@@ -60,21 +60,21 @@ tooltip {
 #tray,
 #memory,
 #backlight {
-    background: var(--base);
+    background: base;
     opacity: 0.9;
     padding: 0px 10px;
     margin: 0px 0px;
     margin-top: 10px;
-    border: 2px solid var(--pine);
+    border: 2px solid pine;
 }
 
 #memory {
-    color: var(--pine);
+    color: pine;
     border-radius: 8px 0px 0px 8px;
 }
 
 #temperature {
-    color: var(--gold);
+    color: gold;
     border-left: 0px;
     border-right: 0px;
 }
@@ -82,11 +82,11 @@ tooltip {
 #temperature.critical {
     border-left: 0px;
     border-right: 0px;
-    color: var(--love);
+    color: love;
 }
 
 #backlight {
-    color: var(--text);
+    color: text;
     border-radius: 0px 8px 8px 0px;
     margin-right: 20px;
 }
@@ -98,7 +98,7 @@ tooltip {
 }
 
 #workspaces {
-    background: var(--base);
+    background: base;
     border-radius: 8px;
     margin-left: 10px;
     padding-right: 0px;
@@ -106,7 +106,7 @@ tooltip {
 }
 
 #custom-power_profile {
-    color: var(--foam);
+    color: foam;
     border-left: 0px;
     border-right: 0px;
 }
@@ -125,32 +125,32 @@ window#waybar.empty #window {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    /*  background-color: rgba(66,66,66,0.5); */
+    /*  background-color: rgba(66,66,66,0.5; */
     /* transparent */
     background-color: transparent;
 }
 
 #clock {
-    color: var(--text);
-    background: var(--pine);
+    color: text;
+    background: pine;
     border-radius: 8px;
     margin-left: 20px;
 }
 
 #network {
-    color: var(--love);
+    color: love;
     border-radius: 8px 0px 0px 8px;
     border-right: 0px;
 }
 
 #pulseaudio {
-    color: var(--iris);
+    color: iris;
     border-radius: 8px 0px 0px 8px;
     border-right: 0px;
 }
 
 #battery {
-    color: var(--foam);
+    color: foam;
     border-radius: 0 8px 8px 0;
     margin-right: 10px;
     border-left: 0px;
