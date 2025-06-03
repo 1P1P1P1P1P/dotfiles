@@ -82,7 +82,7 @@ tooltip {
 #temperature.critical {
     border-left: 0px;
     border-right: 0px;
-    color: love;
+    color: @love;
 }
 
 #backlight {
