@@ -1,29 +1,9 @@
-/* @import "./rose-pine.css"; */
-:root {
-    --base: #191724;
-    --surface: #1f1d2e;
-    --overlay: #26233a;
-
-    --muted: #6e6a86;
-    --subtle: #908caa;
-    --text: #e0def4;
-
-    --love: #eb6f92;
-    --gold: #f6c177;
-    --rose: #ebbcba;
-    --pine: #31748f;
-    --foam: #9ccfd8;
-    --iris: #c4a7e7;
-
-    --highlightLow: #21202e;
-    --highlightMed: #403d52;
-    --highlightHigh: #524f67;
-}
+@import "./rose-pine.css";
 
 * {
     border: none;
-    border-radius: 0px;
     border-width: 1px;
+    border-color: @overlay;
     font-family: 'FiraCode Nerd Font', 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
     font-size: 10px;
     min-height: 0;
@@ -32,44 +12,43 @@
 
 
 window#waybar {
-    background: var(--overlay);
-    color: var(--text);
+    background: @overlay;
+    color: @text;
 }
 
 tooltip {
-    background: var(--base);
-    border-radius: 4px;
-    border-width: 1px;
+    background: @base;
+    border-radius: 0px;
     border-style: solid;
-    border-color: var(--overlay);
+    border-color: @overlay;
 }
 
 #workspaces button {
     padding: 5px;
-    color: var(--highlightMed);
-    margin-right: 5px;
+    color: @highlightMed;
 }
 
 #workspaces button.active {
-    color: var(--text);
+    color: @text;
 }
 
 #workspaces button.focused {
-    color: var(--subtle);
-    background: var(--love);
+    color: @subtle;
+    background: @love;
     border-radius: 8px;
 }
 
 #workspaces button.urgent {
-    color: var(--base);
-    background: var(--pine);
+    color: @base;
+    background: @pine;
     border-radius: 8px;
 }
 
 #workspaces button:hover {
-    background: var(--highlightLow);
-    color: var(--text);
+    background: @highlightLow;
+    color: @text;
     border-radius: 8px;
+    padding: 5px;
 }
 
 #custom-power_profile,
@@ -84,34 +63,32 @@ tooltip {
 #tray,
 #memory,
 #backlight,
-
-#clock {
-    color: var(--text);
-    background: var(--base);
-    border-radius: 8px;
-    margin-left: 20px;
-}
+#custom-poweroff,
 
 #tray {
-    background: var(--base);
+    background: @base;
     border-radius: 8px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #workspaces {
-    background: var(--base);
+    background: @base;
     border-radius: 8px;
-    margin-left: 10px;
-    padding-right: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
     padding-left: 5px;
 }
 
 #custom-power_profile {
-    color: var(--foam);
+    color: @foam;
 }
 
 #window {
+    padding-left: 5px;
+    padding-right: 5px;
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -126,45 +103,79 @@ window#waybar.empty #window {
     border: 0px;
     /*  background-color: rgba(66,66,66,0.5; */
     /* transparent */
-    background-color: transparent;
+    background-color: @overlay;
+    opacity: 0.8;
 }
 
 #memory {
-    color: var(--foam);
-    background: var(--base);
+    border-radius: 8px 0px 0px 8px;
+    color: @foam;
+    background: @base;
+    margin-right: 0px;
 }
 
 #temperature {
-    color: var(--gold);
-    background: var(--base);
+    border-radius: 0px;
+    color: @gold;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #temperature.critical {
-    color: var(--love);
-    background: var(--base);
+    border-radius: 0px;
+    color: @love;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #battery {
-    color: var(--foam);
-    background: var(--base);
+    border-radius: 0px;
+    color: @foam;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #pulseaudio {
-    color: var(--iris);
-    background: var(--base);
+    border-radius: 0px;
+    color: @iris;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #backlight {
-    color: var(--text);
-    background: var(--base);
+    border-radius: 0px;
+    color: @text;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #network {
-    color: var(--love);
-    background: var(--base);
+    border-radius: 0px;
+    color: @love;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-#poweroff {
-    color: var(--rose);
-    background: var(--base);
+#custom-poweroff {
+    border-radius: 0px;
+    color: @rose;
+    background: @base;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#clock {
+    color: @text;
+    background: @base;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
