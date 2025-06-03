@@ -88,7 +88,10 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "custom/poweroff": {
-        "format": "",
+        "format": "{icon}",
+        "format-icons": [
+            "󰐥" // Power off icon
+        ],
         "on-click": "hyprctl dispatch exit"
     },
     "custom/suspend": {

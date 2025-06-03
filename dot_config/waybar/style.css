@@ -14,7 +14,7 @@ window#waybar {
 }
 
 tooltip {
-    background: @base;
+    background: @overlay;
     border-radius: 4px;
     border-width: 2px;
     border-style: solid;
@@ -24,7 +24,7 @@ tooltip {
 #workspaces button {
     padding: 5px;
     color: @highlightMed;
-    margin-right: 5px;
+    background: @overlay;
 }
 
 #workspaces button.active {
@@ -64,17 +64,20 @@ tooltip {
 
 #clock {
     color: @text;
+    background: @overlay;
     border-radius: 8px;
     margin-left: 20px;
 }
 
 #tray {
+    background: @overlay;
     border-radius: 8px;
     margin-left: 10px;
     margin-right: 0px;
 }
 
 #workspaces {
+    background: @overlay;
     border-radius: 8px;
     margin-left: 10px;
     padding-right: 0px;
@@ -83,11 +86,13 @@ tooltip {
 
 #custom-power_profile {
     color: @foam;
+    background: @overlay;
     border-left: 0px;
     border-right: 0px;
 }
 
 #window {
+    background: @overlay;
     border-radius: 8px;
     margin-left: 60px;
     margin-right: 60px;
@@ -108,11 +113,13 @@ window#waybar.empty #window {
 
 #memory {
     color: @foam;
+    background: @overlay;
     border-radius: 8px 0px 0px 8px;
 }
 
 #temperature {
     color: @gold;
+    background: @overlay;
     border-left: 0px;
     border-right: 0px;
 }
@@ -121,34 +128,40 @@ window#waybar.empty #window {
     border-left: 0px;
     border-right: 0px;
     color: @love;
+    background: @overlay;
 }
 
 #battery {
     color: @foam;
+    background: @overlay;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio {
     color: @iris;
+    background: @overlay;
     border-left: 0px;
     border-right: 0px;
 }
 
 #backlight {
     color: @text;
+    background: @overlay;
     border-left: 0px;
     border-right: 0px;
 }
 
 #network {
     color: @love;
+    background: @overlay;
     border-left: 0px;
     border-right: 0px;
 }
 
 #custom.poweroff {
     color: @rose;
+    background: @overlay;
     border-radius: 0 8px 8px 0;
     border-left: 0px;
 }
