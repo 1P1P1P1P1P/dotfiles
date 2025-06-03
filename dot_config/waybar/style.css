@@ -5,10 +5,11 @@
     border-radius: 0;
     font-family: 'FiraCode Nerd Font', 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
     font-size: 10px;
+    min-height: 0;
 }
 
 window#waybar {
-    background: @base;
+    background: rgba(21, 18, 27, 0);
     color: @text;
 }
 
@@ -59,36 +60,12 @@ tooltip {
 #workspaces,
 #tray,
 #memory,
-#backlight {
-    background: @base;
-    opacity: 0.9;
-    padding: 0px 10px;
-    margin: 0px 0px;
-    margin-top: 10px;
-    border: 2px solid @pine;
-}
+#backlight,
 
-#memory {
-    color: @pine;
-    border-radius: 8px 0px 0px 8px;
-}
-
-#temperature {
-    color: @gold;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#temperature.critical {
-    border-left: 0px;
-    border-right: 0px;
-    color: @love;
-}
-
-#backlight {
+#clock {
     color: @text;
-    border-radius: 0px 8px 8px 0px;
-    margin-right: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
 }
 
 #tray {
@@ -98,7 +75,6 @@ tooltip {
 }
 
 #workspaces {
-    background: @base;
     border-radius: 8px;
     margin-left: 10px;
     padding-right: 0px;
@@ -130,28 +106,49 @@ window#waybar.empty #window {
     background-color: transparent;
 }
 
-#clock {
-    color: @text;
-    background: @pine;
-    border-radius: 8px;
-    margin-left: 20px;
+#memory {
+    color: @foam;
+    border-radius: 8px 0px 0px 8px;
 }
 
-#network {
+#temperature {
+    color: @gold;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#temperature.critical {
+    border-left: 0px;
+    border-right: 0px;
     color: @love;
-    border-radius: 8px 0px 0px 8px;
+}
+
+#battery {
+    color: @foam;
+    border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio {
     color: @iris;
-    border-radius: 8px 0px 0px 8px;
+    border-left: 0px;
     border-right: 0px;
 }
 
-#battery {
-    color: @foam;
+#backlight {
+    color: @text;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#network {
+    color: @love;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#custom/poweroff {
+    color: @rose;
     border-radius: 0 8px 8px 0;
-    margin-right: 10px;
     border-left: 0px;
 }
