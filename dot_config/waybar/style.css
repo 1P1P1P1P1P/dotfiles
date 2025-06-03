@@ -147,7 +147,7 @@ window#waybar.empty #window {
     border-right: 0px;
 }
 
-#custom/poweroff {
+#custom.poweroff {
     color: @rose;
     border-radius: 0 8px 8px 0;
     border-left: 0px;
